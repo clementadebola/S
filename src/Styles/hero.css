@@ -1,0 +1,151 @@
+.product-cont{
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 10px 20px;
+}
+@media screen and (max-width:  425px) {
+    .product-cont {
+display: block;
+align-items: center;
+    }
+    .aside {
+        
+    }
+    .banner-img{
+      width: 100wh;
+      overflow-x: scroll;
+    }
+    .carousel img{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .banner img{
+width: 410px;
+    }
+}
+
+.banner{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.banner img{
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.carousel{
+    width: 450px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-left: 10px;
+}
+.carousel img{
+    border-radius: 8px;
+    width: 100px;
+    cursor: pointer;
+}
+.active-carousel-item{
+    opacity: 0.6;
+    border: 2px solid darkorange;
+}
+.carousel img:hover{
+    transition: all .3s ease-in-out;
+}
+
+.aside{
+    flex: 50%;
+}
+.aside{
+    flex: 50%;
+    padding: 60px 40px;
+}
+.aside-text h2{
+    color: darkorange;
+    margin-bottom: 9px;
+    font-size: 12px;
+}
+.aside-text h1{
+    font-size: 40px;
+    max-width: 400px;
+    font-weight: 1000;
+    margin-bottom: 25px;
+}
+.aside-p{
+    font-size: 15x;
+    color: grey;
+    max-width: 400px;
+    margin-bottom: 25px;
+}
+.price-tags-cont {
+    color: black;
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.addCart-btn{
+    width: 200px;
+height: 40px;
+color: white;
+background-color: darkorange;
+border: none;
+border-radius: 8px;
+box-shadow: grey ;
+display: flex;
+align-items: center;
+font-size: 13px;
+flex-direction: row;
+gap: 15px;
+justify-content: center;
+cursor: pointer;
+}
+.addCart-btn span{
+    font-size: 12px;
+}
+.addCart-btn img{
+ height: 14px;
+ width: 14px;
+}
+.button{
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+    color: white;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    box-shadow: beige;
+    margin-right: 20px;
+    align-items: center;
+    display: flex;
+    padding: 5px 10px;
+}
+
+.aside-btns{
+    display: flex;
+
+}
+.product-count{
+    color: black;
+}
+.btn-1{
+    background: transparent;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    color: darkorange;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
